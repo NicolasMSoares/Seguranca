@@ -1,0 +1,26 @@
+.home-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.home-dados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 30px;
+}
+
+.home-dados img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.home-infos {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
