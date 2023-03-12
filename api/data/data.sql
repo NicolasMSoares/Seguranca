@@ -8,6 +8,7 @@ CREATE TABLE usuario (
 	telefone VARCHAR(11) NOT NULL,
 	email VARCHAR(100) NOT NULL,
 	senha VARCHAR(100) NOT NULL,
+	token_recuperar_senha VARCHAR(30),
 	foto VARCHAR(512) NOT NULL,
 	criado_em DATE,
 	atualizado_em DATE,

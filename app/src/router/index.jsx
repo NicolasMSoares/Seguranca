@@ -3,6 +3,8 @@ import { HomeScreen } from "../screens/home/home.screen";
 import { RegisterScreen } from "../screens/register/register.screen";
 import { LoginScreen } from "../screens/login/login.screen";
 import { AlterScreen } from "../screens/alter/alter.screen";
+import { ForgotPasswordScreen } from "../screens/forgot_password/forgot.password.screen";
+import { AlterPasswordScreen } from "../screens/forgot_password/alter.password.screen";
 
 
 
@@ -23,5 +25,13 @@ export const router = createBrowserRouter([
     {
         path: '/alter',
         element: <AlterScreen/>
+    },
+    {
+        path: '/forgot_password',
+        element: <ForgotPasswordScreen/>
+    },
+    {
+        path: '/alter_password',
+        element: <AlterPasswordScreen/>
     }
 ]);

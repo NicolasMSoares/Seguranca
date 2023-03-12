@@ -9,5 +9,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
     Usuario findByEmail(String email);
 
+    Usuario findByEmailAndTokenRecuperarSenha(String email, String token);
+
     Page<Usuario> findByNomeContainingIgnoreCase(String text,Pageable pageable);
 }

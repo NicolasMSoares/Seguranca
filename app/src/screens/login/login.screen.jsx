@@ -62,6 +62,7 @@ export function LoginScreen() {
             {error && <p>{error}</p>}            
             <button type="submit">Login</button>
             <button onClick={() => navigate('/register')}>Criar Conta</button>
+            <button onClick={() => navigate('/forgot_password')}>Esqueci a senha</button>            
         </div>
       </form>
     );

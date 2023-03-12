@@ -29,6 +29,7 @@ public class Usuario {
     private String telefone;
     private String email;
     private String senha;
+    private String tokenRecuperarSenha;
     private String foto;
     private LocalDate criadoEm;
     private LocalDate atualizadoEm;

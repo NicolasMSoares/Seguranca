@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nome\": \"nicolas\",\n    \"telefone\": \"51999999999\",\n    \"email\": \"nicolas@mail.com\",\n    \"senha\": \"123456\",\n    \"foto\": \"https://upload.wikimedia.org/wikipedia/commons/6/6a/HIRES-AVATAR-AJB.jpg?uselang=pt-br\"    \n}",
+					"raw": "{\n    \"nome\": \"teste\",\n    \"telefone\": \"51999999999\",\n    \"email\": \"teste@gmail.com\",\n    \"senha\": \"123456\",\n    \"foto\": \"https://upload.wikimedia.org/wikipedia/commons/6/6a/HIRES-AVATAR-AJB.jpg?uselang=pt-br\",\n    \"permissoes\": [\n        \"USER\"\n    ]    \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -32,6 +32,70 @@
 					"port": "8080",
 					"path": [
 						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recuperar codigo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"Informar email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/senha/recuperar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"senha",
+						"recuperar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar senha",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"informar email\",\n    \"tokenRecuperarSenha\": \"informar token\",\n    \"senha\": \"123456\"      \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/senha/redefinir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"senha",
+						"redefinir"
 					]
 				}
 			},
@@ -99,7 +163,7 @@
 					"basic": [
 						{
 							"key": "username",
-							"value": "nicolas@cwi.com.br",
+							"value": "teste@gmail.com",
 							"type": "string"
 						},
 						{
